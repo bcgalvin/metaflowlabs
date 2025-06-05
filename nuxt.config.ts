@@ -9,10 +9,12 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/ui',
+    '@nuxthub/core',
     '@vueuse/nuxt',
     'motion-v/nuxt',
     'nuxt-mcp',
-    'nuxt-llms'
+    'nuxt-llms',
+    '@nuxthub/core'
   ],
   devtools: { enabled: true },
   app: {
@@ -20,8 +22,9 @@ export default defineNuxtConfig({
       title: 'Metaflowlabs',
       htmlAttrs: { lang: 'en' },
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' },
-        { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicon-192x192.png' }
+        { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
+        { rel: 'icon', type: 'image/png', href: '/favicon-96x96.png', sizes: '96x96' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }
       ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -33,7 +36,6 @@ export default defineNuxtConfig({
   },
   css: ['/assets/css/main.css'],
   router: { options: { scrollBehaviorType: 'smooth' } },
-  site: { url: 'https://metaflowlabs.nuxt.space' },
   colorMode: { preference: 'system' },
   content: {
     build: {
@@ -54,20 +56,13 @@ export default defineNuxtConfig({
     }
   },
   routeRules: {
-    '/': { prerender: false }
+    '/': { prerender: true }
   },
   future: { compatibilityVersion: 4 },
   experimental: {
     viewTransition: true
   },
   compatibilityDate: '2025-01-05',
-
-  fonts: {
-    families: [
-      { name: 'Nunito', provider: 'google' },
-      { name: 'Newsreader', provider: 'google', weights: ['400', '400i', '700'] }
-    ]
-  },
   llms: {
     domain: 'https://metaflowlabs.nuxt.space',
     title: 'Metaflowlabs',
