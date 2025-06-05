@@ -25,8 +25,7 @@ a
 systematic approach to creating technical
 documentation split between four pillars each serving a specific user need and learning context:
 
-:nuxt-img{src="/diataxis.png" alt="Illustration of the Diataxis framework pillars" width="600" class="
-mx-auto my-8 border rounded-lg shadow-lg"}
+![Illustration of the Diataxis framework pillars](/diataxis.png)
 
 
 ---

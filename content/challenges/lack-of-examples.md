@@ -8,8 +8,7 @@ order: 4
 _State of infrastructure support for OSS Metaflow turns off ops teams, I have heard this personally several times at different orgs_
 
 
-:nuxt-img{src="/slack.png" alt="Illustration of the Diataxis framework pillars" width="600" class="
-mx-auto my-8 border rounded-lg shadow-lg"}
+![Illustration of the Diataxis framework pillars](/slack.png)
 Quote from the Rands Leadership slack community (35k+ members), on the #devops channel (5k+ members)
 
 - Independent deployability is a key factor when evaluating any new technology; Metaflow not having a seamless experience absolutely hurts adoption and lowers confidence in the project
