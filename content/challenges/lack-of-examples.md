@@ -8,7 +8,7 @@ order: 4
 _State of infrastructure support for OSS Metaflow turns off ops teams, I have heard this personally several times at different orgs_
 
 
-![](/slack.png)
+![](/challenges/slack.png)
 
 Quote from the Rands Leadership slack community (35k+ members), on the #devops channel (5k+ members)
 
