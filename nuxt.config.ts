@@ -9,12 +9,10 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/ui',
-    '@nuxthub/core',
     '@vueuse/nuxt',
     'motion-v/nuxt',
     'nuxt-mcp',
-    'nuxt-llms',
-    '@nuxthub/core'
+    'nuxt-llms'
   ],
   devtools: { enabled: true },
   app: {
