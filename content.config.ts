@@ -1,4 +1,5 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+import { asSeoCollection } from '@nuxtjs/seo/content'
 
 // Common / Reusable Zod Schemas
 const Link = z.object({
@@ -48,12 +49,11 @@ const commonLearnPageSchema = z.object({
   description: z.string().optional(),
   navigationTitle: z.string().optional(),
   order: z.number().optional(),
-  titleTemplate: z.string().optional(),
   surround: z.boolean().optional()
 })
 
 // Collection Definitions
-const projectsCollection = defineCollection({
+const projectsCollection = defineCollection(asSeoCollection({
   type: 'page',
   source: '2.projects/*.md',
   schema: z.object({
@@ -66,7 +66,7 @@ const projectsCollection = defineCollection({
     dependencies: z.array(z.string()).optional(),
     order: z.number().optional()
   })
-})
+}))
 
 const projectsLandingCollection = defineCollection({
   type: 'data',
@@ -79,11 +79,11 @@ const projectsLandingCollection = defineCollection({
   })
 })
 
-const learnCollection = defineCollection({
+const learnCollection = defineCollection(asSeoCollection({
   type: 'page',
   source: '1.learn/**/*.{md,yml}',
   schema: commonLearnPageSchema
-})
+}))
 
 const landingPageCollection = defineCollection({
   type: 'data',
@@ -95,31 +95,31 @@ const landingPageCollection = defineCollection({
 })
 
 // FAQ Collection
-const faqCollection = defineCollection({
+const faqCollection = defineCollection(asSeoCollection({
   type: 'page',
   source: 'faq/**/*.md',
   schema: faqMarkdownItemSchema
-})
+}))
 
 // Challenges Collection
-const challengesCollection = defineCollection({
+const challengesCollection = defineCollection(asSeoCollection({
   type: 'page',
   source: 'challenges/**/*.md',
   schema: challengeMarkdownSchema
-})
+}))
 
 // Collection for Proposal Page
-const proposalPageCollection = defineCollection({
+const proposalPageCollection = defineCollection(asSeoCollection({
   type: 'page',
   source: 'proposal.md',
   schema: z.object({
     title: z.string({ message: 'Proposal page title is required.' }),
     description: z.string().optional()
   })
-})
+}))
 
 // Collection for Proposal Page Routes/Tabs
-const routesCollection = defineCollection({
+const routesCollection = defineCollection(asSeoCollection({
   type: 'page',
   source: 'routes/*.md',
   schema: z.object({
@@ -127,7 +127,7 @@ const routesCollection = defineCollection({
     description: z.string().optional(),
     order: z.number().optional()
   })
-})
+}))
 
 export default defineContentConfig({
   collections: {

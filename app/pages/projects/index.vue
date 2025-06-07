@@ -35,9 +35,7 @@ const breadcrumbs = computed<BreadcrumbItem[]>(() => [
 
 useSeoMeta({
   title: () => pageTitle.value,
-  description: () => pageDescription.value,
-  ogTitle: () => pageTitle.value,
-  ogDescription: () => pageDescription.value
+  description: () => pageDescription.value
 })
 
 interface FilterSidebarGroup {

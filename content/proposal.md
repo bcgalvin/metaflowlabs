@@ -1,6 +1,14 @@
 ---
 title: Proposal
 description: Proposal
+sitemap:
+  changefreq: 'quarterly'
+  priority: 0.7
+robots: 'index, follow'
+ogImage:
+  component: 'DefaultOgImage'
+  props:
+    title: 'Metaflowlabs Proposal'
 ---
 
 ## Background
@@ -15,7 +23,7 @@ thinking about Metaflow:
 - There exists possible conflicts for Outerbounds to produce certain types of content and examples
 
 The last point deserves a bit of clarification. I'm currently
-reading [The Idea Factory: Bell Labs and the Great Age of American Innovation](https://www.amazon.com/Idea-Factory-Great-American-Innovation/dp/0143122797/ref=sr_1_1?dib=eyJ2IjoiMSJ9.dZIV-k0vw9usKuoTVml5tS3kxHQnQ1EU7XRjuSqNoP9YKVS2UcKyQjgMx_sNpidiPCaKzDVgkfohnzFBefxzx_YB7vK0gC-MziuAmtPtOLY.E4_hoqFoQKSUtefESUfmdFM5d3e0dM1MHQ8eEEbr4gQ&dib_tag=se&hvbmt=%7BBidMatchType%7D&hvdev=c&keywords=bell+labs+the+idea+factory&qid=1748855019&s=books&sr=1-1),
+reading [The Idea Factory: Bell Labs and the Great Age of American Innovation](https://www.amazon.com/Idea-Factory-Great-American-Innovation/dp/0143122797/ref=sr_1_1?dib=eyJ2IjoiMSJ9.dZIV-k0vw9usKuoTVml5tS3kxHQnQ1EU7XRjuSqNoP9YKVS2UcKyQjgMx_sNpidcPCaKzDVgkfohnzFBefxzx_YB7vK0gC-MziuAmtPtOLY.E4_hoqFoQKSUtefESUfmdFM5d3e0dM1MHQ8eEEbr4gQ&dib_tag=se&hvbmt=%7BBidMatchType%7D&hvdev=c&keywords=bell+labs+the+idea+factory&qid=1748855019&s=books&sr=1-1),
 and while the parallel may be a bit of a stretch I'm going to try to make it work. The magic of Bell Labs
 was in that organizations ability to perform fundamental research (including the S language by John Chambers, which
 became R); and its downfall was in large part due to shifting its focus away from long-term, fundamental research toward

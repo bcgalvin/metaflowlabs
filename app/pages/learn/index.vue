@@ -32,7 +32,7 @@ if (import.meta.server && !pageData.value && !pageError.value) {
 }
 
 useSeoMeta({
-  title: () => pageData.value?.title || 'Learn Metaflow',
+  title: () => pageData.value?.title || 'Learn',
   description: () => pageData.value?.description || 'Explore learning resources for Metaflow.'
 })
 </script>

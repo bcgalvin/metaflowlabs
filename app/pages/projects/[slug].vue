@@ -34,9 +34,7 @@ if (fetchError.value || !project.value) {
 
 useSeoMeta({
   title: () => project.value?.title || 'Project',
-  description: () => project.value?.description || 'Project details for Metaflowlabs.',
-  ogTitle: () => `${project.value?.title || 'Project'} • Metaflowlabs Projects`,
-  ogDescription: () => project.value?.description || 'Project details for Metaflowlabs.'
+  description: () => project.value?.description || 'Project details for Metaflowlabs.'
 })
 
 const breadcrumbs = computed<BreadcrumbItem[]>(() => {

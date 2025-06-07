@@ -12,20 +12,18 @@ const { data: pageData, error, pending } = await useAsyncData<ProposalPageConten
 
 if (pageData.value) {
   useSeoMeta({
-    title: () => `${pageData.value!.title || 'Proposal'} - Metaflowlabs`,
-    description: () => pageData.value!.description || 'Learn more proposal Metaflowlabs, our mission, and our work.',
-    ogTitle: () => `${pageData.value!.title || 'Proposal'} - Metaflowlabs`,
-    ogDescription: () => pageData.value!.description || 'Learn more proposal Metaflowlabs, our mission, and our work.'
+    title: () => pageData.value!.title || 'Proposal',
+    description: () => pageData.value!.description || 'Learn more proposal Metaflowlabs, our mission, and our work.'
   })
 } else if (error.value) {
   console.error('Failed to load proposal page content:', error.value)
   useSeoMeta({
-    title: 'Error Loading Page - Metaflowlabs',
+    title: 'Error Loading Page',
     description: 'Could not load the page content. Please try again later.'
   })
 } else {
   useSeoMeta({
-    title: 'Proposal Us - Metaflowlabs',
+    title: 'Proposal Us',
     description: 'Learn more proposal Metaflowlabs, our mission, and our work.'
   })
 }

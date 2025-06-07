@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 useSeoMeta({
-  titleTemplate: t => (t ? `${t}` : ''),
-  description: 'Metaflowlabs',
+  titleTemplate: '%s - Metaflowlabs',
+  description: 'Metaflowlabs is an all-in-one development hub for Metaflow, providing in-depth guides, tutorials and reusable patterns for working with Metaflow.',
   ogImage: '/og.png'
 })
 </script>

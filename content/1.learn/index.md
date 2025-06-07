@@ -1,6 +1,5 @@
 ---
-title: 'Learn Metaflow'
-titleTemplate: '%s'
+title: 'Learn'
 description: 'Learn successful development patterns and best-practices for Metaflow.'
 navigation: false
 surround: false

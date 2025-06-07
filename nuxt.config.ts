@@ -34,6 +34,12 @@ export default defineNuxtConfig({
   },
   css: ['/assets/css/main.css'],
   router: { options: { scrollBehaviorType: 'smooth' } },
+  site: {
+    url: 'https://metaflowlabs.nuxt.space',
+    name: 'Metaflowlabs',
+    description: 'Metaflowlabs is an all-in-one development hub for Metaflow, providing in-depth guides, tutorials and reusable patterns for working with Metaflow.',
+    defaultLocale: 'en'
+  },
   colorMode: { preference: 'system' },
   content: {
     build: {

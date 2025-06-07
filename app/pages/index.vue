@@ -4,6 +4,7 @@ import ChallengesSection from '~/components/landing/ChallengesSection.vue'
 import LandingFaq from '~/components/landing/Faq.vue'
 import Divider from '~/components/Divider.vue'
 import type { LandingPageContent } from '~/types'
+import { watchEffect } from 'vue'
 
 const {
   data: landingContent,
@@ -30,6 +31,16 @@ const {
 if (fetchError.value && landingContent.value === undefined) {
   console.error('Error fetching landing page data for index.vue:', fetchError.value)
 }
+
+watchEffect(() => {
+  if (landingContent.value?.hero) {
+    useSeoMeta({
+      title: landingContent.value.hero.title,
+      description: landingContent.value.hero.description,
+      titleTemplate: '%s'
+    })
+  }
+})
 </script>
 
 <template>
