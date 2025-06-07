@@ -29,9 +29,9 @@
 - [Deep Dives](https://metaflowlabs.nuxt.space/learn/deep-dives): Build your baseline understanding of Metaflow.
 - [Understanding Metaflow Persistence: Artifacts, Datastores, and Best Practices](https://metaflowlabs.nuxt.space/learn/deep-dives/persistence): A comprehensive overview of how Metaflow handles data persistence, from `self` assignments and artifact management to datastore interactions, caching, and choosing the right storage strategies.
 - [Metaflow Datastore Internals: Caching and Resume](https://metaflowlabs.nuxt.space/learn/deep-dives/persistence/datastore-internals): Explore how Metaflow interacts with the datastore, enabling features like caching and resume.
-- [Patterns for Metaflow](https://metaflowlabs.nuxt.space/learn/patterns): Design patterns, best practices, and reusable solutions for common MLOps challenges using Metaflow.
-- [Metaflow Guides](https://metaflowlabs.nuxt.space/learn/guides): Step-by-step tutorials and practical guides for using Metaflow features and integrations effectively.
-- [Learn Metaflow](https://metaflowlabs.nuxt.space/learn): Learn successful development patterns and best-practices for Metaflow.
+- [Patterns](https://metaflowlabs.nuxt.space/learn/patterns): Design patterns, best practices, and reusable solutions for common MLOps challenges using Metaflow.
+- [Guides](https://metaflowlabs.nuxt.space/learn/guides): Step-by-step tutorials and practical guides for using Metaflow features and integrations effectively.
+- [Learn](https://metaflowlabs.nuxt.space/learn): Learn successful development patterns and best-practices for Metaflow.
 
 ## Faq
 
