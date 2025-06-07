@@ -708,7 +708,7 @@ It is also possible to include the Metaflow API through [Nuxt Content's github s
 
 *State of infrastructure support for OSS Metaflow turns off ops teams, I have heard this personally several times at different orgs*
 
-![](https://metaflowlabs.nuxt.space/slack.png)
+![](https://metaflowlabs.nuxt.space/challenges/slack.png)
 
 Quote from the Rands Leadership slack community (35k+ members), on the #devops channel (5k+ members)
 
