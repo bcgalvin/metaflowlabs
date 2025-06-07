@@ -88,7 +88,7 @@ Ensure consistency, quality, and efficiency in content creation
 
 # Deep Dives
 
-![](https://metaflowlabs.nuxt.space/content/learn/first-pyramid.svg)
+![](https://metaflowlabs.nuxt.space/content/learn/first-pyramid.svg){width="700"}
 
 ### About
 
@@ -121,7 +121,7 @@ Manim would be an amazing tool for demonstrating Metaflow concepts as it provide
 
 There are a number of ways to do this (one being showing a Manim animation completing the process), but one that I've thought about using @nuxt/ui components would be to combine shiki, which has excellent facilities for code highlighting, with the [Stepper component](https://ui.nuxt.com/components/stepper){rel="nofollow"} from Nuxt UI:
 
-![](https://metaflowlabs.nuxt.space/content/learn/stepper.png)
+![](https://metaflowlabs.nuxt.space/content/learn/stepper.png){width="600"}
 
 Nuxt UI has a pro license (generous one time payment terms, funds go to Nuxt team) that offers a lot of nice components that would make creating these custom MDCs even easier, with a lot of out-of-the-box MDCs that are all over the [nuxt.com site](https://nuxt.com/docs/getting-started/introduction){rel="nofollow"}.
 
@@ -219,7 +219,7 @@ The concept of immutability in content-addressing is a powerful guarantee. Once 
 
 To visualize this, consider how different data objects map to unique storage locations based on their content:
 
-![Diagram illustrating content-addressed storage: different data objects with unique content hashes are stored, while identical objects share the same storage.](https://metaflowlabs.nuxt.space/content/learn/datastore-internals-01.png)
+![](https://metaflowlabs.nuxt.space/content/learn/datastore-internals-01.png){width="750"}
 
 It's not just your data artifacts that benefit from this. Metaflow also applies content-addressing to snapshot the **code package** associated with each run. This entire package (your flow script and any local modules) is bundled, hashed, and stored in the datastore. This ensures that you can always retrieve the exact version of the code that produced a specific set of artifacts, further bolstering reproducibility.
 
@@ -298,7 +298,7 @@ A vital aspect to remember is immutability. Once an artifact makes it to the dat
 
 The following diagram visually summarizes this lifecycle:
 
-![Diagram of the Metaflow artifact lifecycle: Create & Assign -> Serialize -> Hash -> Persist to Datastore (write) -> Update Metadata -> Access from Datastore (read) -> Deserialize.](https://metaflowlabs.nuxt.space/content/learn/datastore-internals-02.png)
+![](https://metaflowlabs.nuxt.space/content/learn/datastore-internals-02.png){width="750"}
 
 This carefully orchestrated lifecycle ensures that your data is managed consistently, versioned effectively, and can be reliably passed between different parts of a Metaflow workflow, all underpinned by robust interactions with the datastore and the metadata service.
 
@@ -363,7 +363,7 @@ Speed Up Your Iterations with Caching: Caching is a huge boon when you're active
 
 The caching logic can be visualized as follows:
 
-![Flowchart of Metaflow caching logic: Check code hash -> Check input artifact hashes -> If both match previous success, use cached output; otherwise, execute step and store output.](https://metaflowlabs.nuxt.space/content/learn/datastore-internals-04.png)
+![](https://metaflowlabs.nuxt.space/content/learn/datastore-internals-04.png){width="500"}
 
 By smartly leveraging content-addressing and the robust persistence of artifacts, Metaflow's caching provides an intelligent way to optimize workflow execution, often without requiring any manual intervention or configuration from you, the developer.
 
@@ -392,7 +392,7 @@ Ultimately, a solid grasp of these datastore internals empowers you to design mo
 
 # Patterns
 
-![](https://metaflowlabs.nuxt.space/content/learn/second-pyramid.svg)
+![](https://metaflowlabs.nuxt.space/content/learn/second-pyramid.svg){width="700"}
 
 ### About
 
@@ -420,11 +420,11 @@ Discoverability is probably the second most important aspect to a site like this
 
 This entails effective content tagging and providing a layout with the right amount of information density and filter options. I particularly like this component from [Vueuse](https://vueuse.org/functions.html){rel="nofollow"}:
 
-![](https://metaflowlabs.nuxt.space/content/learn/discoverability.png)
+![](https://metaflowlabs.nuxt.space/content/learn/discoverability.png){width="650"}
 
 The detail page also has several MDCs that I think would be valuable in a content site, the examples below show context around changes to the function referenced in the detail page but I think having this for content itself would be valuable:
 
-![](https://metaflowlabs.nuxt.space/content/learn/discoverability-1.png)![](https://metaflowlabs.nuxt.space/content/learn/discoverability-2.png)
+![](https://metaflowlabs.nuxt.space/content/learn/discoverability-1.png){width="500"}![](https://metaflowlabs.nuxt.space/content/learn/discoverability-2.png){width="500"}
 
 ---
 
@@ -460,7 +460,7 @@ title: null
 
 # Guides
 
-![](https://metaflowlabs.nuxt.space/content/learn/full-pyramid.svg)
+![](https://metaflowlabs.nuxt.space/content/learn/full-pyramid.svg){width="700"}
 
 ### About
 
@@ -838,11 +838,6 @@ This is outlined in the landing page but will reiterate here:
 - Feedback from consulting activities would inform Outerbounds product, e.g. **the DBT model**
 - Pipeline of warm leads for OB Platform from Labs consulting / training / courses
 - Dramatically improve Metaflow SEO, especially for LLMs
-
-#### Table Stakes
-
-- **Full time engagement**: anything less I would have to start consulting DBT again and would have to split time. It's simply impossible for this to be a success unless I'm thinking about this full time.
-- **Standard consulting engagement**: there is little wiggle room in my standard terms unless the 12 weeks gets expanded. The risk is too great on my end and do not want to be in the position where I'm stressed about self-sufficiency after the engagement ends (especially if I'm not solo).
 
 
 # Embedded
